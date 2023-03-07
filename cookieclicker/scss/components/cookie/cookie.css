@@ -1,0 +1,68 @@
+.cookie {
+  width: 30rem;
+  background: #C69B7B;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  box-shadow: inset 0 0 10rem 0 #483434;
+  position: relative;
+  overflow: hidden;
+  border: 1rem solid #483434;
+  transition: 0.2s all;
+}
+.cookie:hover {
+  cursor: pointer;
+}
+.cookie:active {
+  transform: scale(0.95);
+}
+.cookie--chocolate {
+  background: #3C2A21;
+  box-shadow: 0 2rem 1.5rem 0rem rgba(0, 0, 0, 0.2);
+  border: 1rem solid #1C0A00;
+}
+.cookie--velvet {
+  background: #8B0000;
+  border: 1rem solid #a95959;
+}
+.cookie--velvet .cookie__spots {
+  background: white;
+}
+.cookie--chocolate .cookie__spots {
+  background: #1C0A00;
+  border-radius: 40%;
+}
+.cookie__spots {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  background: #483434;
+  border-radius: 48%;
+  position: absolute;
+}
+.cookie__spots--first {
+  top: 10%;
+  left: 5%;
+}
+.cookie__spots--second {
+  right: 10%;
+  top: 5%;
+}
+.cookie__spots--third {
+  right: 5%;
+  bottom: 10%;
+}
+.cookie__spots--fourth {
+  left: 5%;
+  bottom: 10%;
+}
+.cookie__spots--fifth {
+  left: 40%;
+  top: 20%;
+}
+.cookie__spots--sixth {
+  left: 35%;
+  bottom: 15%;
+}
+.cookie__spots--seventh {
+  left: 35%;
+  top: -10%;
+}/*# sourceMappingURL=cookie.css.map */

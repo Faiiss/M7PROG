@@ -1,0 +1,83 @@
+@use "../../abstracts/colors.scss";
+.cookie{
+    width: 30rem;
+    background: map-get(colors.$cookie,"background");
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    box-shadow: inset 0 0 10rem 0 map-get(colors.$cookie,"spots");
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid map-get(colors.$cookie,"spots");
+    transition: 0.2s all;
+    
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+
+    &--chocolate{
+        background: #3C2A21;
+        box-shadow: 0 2rem 1.5rem 0rem rgba(0,0,0,0.2);
+        border: 1rem solid #1C0A00;
+    }
+
+    &--velvet{
+        background: #8B0000;
+        border: 1rem solid  #a95959;
+    }
+
+    &--velvet &__spots{
+        background: white;
+    }
+
+    &--chocolate &__spots{
+        background: #1C0A00;
+        border-radius: 40%;
+    }
+
+    &__spots{
+        width: 5rem;
+        aspect-ratio: 1/1;
+        background: map-get(colors.$cookie,"spots");
+        border-radius: 48%;
+        position: absolute;
+
+        &--first{
+            top: 10%;
+            left: 5%;
+        }
+
+        &--second{
+            right: 10%;
+            top: 5%;
+        }
+
+        &--third{
+            right: 5%;
+            bottom: 10%;
+        }
+
+        &--fourth{
+            left: 5%;
+            bottom: 10%;
+        }
+
+        &--fifth{
+            left: 40%;
+            top: 20%;
+        }
+
+        &--sixth{
+            left: 35%;
+            bottom: 15%;
+        }
+
+        &--seventh{
+            left: 35%;
+            top: -10%;
+        }
+    }
+}
