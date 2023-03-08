@@ -118,21 +118,32 @@ class AutoScore {
     score = undefined;
     forward = false;
 
-    constructor(htmlElement) {
+    constructor(htmlElement, score) {
         this.htmlElement = htmlElement;
         this.score = score;
-        this.htmlElement.onclick = this.onAutoScoreClicked;
+
+        const alreadyClicked = localStorage.getItem('autoScoreAlreadyClicked');
+        if (alreadyClicked) {
+            this.startAutoScore();
+        } else {
+            this.htmlElement.onclick = this.onAutoScoreClicked;
+        }
     }
 
     onAutoScoreClicked = () => {
-        if (this.forward === false) {
-            this.forward = true;
-            this.score.subtractScore();
-            score.onAutoScoreClicked();
-        }
+        this.startAutoScore();
+        localStorage.setItem('autoScoreAlreadyClicked', true);
+    }
 
+    startAutoScore = () => {
+        this.htmlElement.onclick = null; // disable button
+        this.forward = true;
+        this.score.subtractScore();
+        this.score.onAutoScoreClicked();
     }
 }
+
+
 
 class ChocolateCookie {
     htmlElement = undefined;
