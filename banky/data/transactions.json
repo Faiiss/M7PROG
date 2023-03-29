@@ -1,0 +1,48 @@
+{
+   "Bankrekening": {
+     "icon": "fa-solid fa-house",
+     "transactions": [
+       {
+         "from_to": "Jeroen",
+         "amount": 15
+       },
+       {
+         "from_to": "Mert",
+         "amount": -80
+       },
+       {
+         "from_to": "Jeroen",
+         "amount": 200
+       },
+       {
+         "from_to": "Bilal",
+         "amount": 50
+       },
+       {
+         "from_to": "Faiss Designs",
+         "amount": -40
+       },
+       {
+         "from_to": "Vini",
+         "amount": 16
+       }
+     ]
+   },
+   "ZZP-Rekening Faiss Designs": {
+      "icon": "fa-solid fa-briefcase",
+      "transactions": [
+        {
+          "from_to": "Bedrijf X",
+          "amount": 10000000
+        },
+        {
+          "from_to": "Bedrijf X",
+          "amount": -500
+        },
+        {
+         "from_to": "Bankrekening",
+         "amount": -2500
+       }
+      ]
+    }
+  }

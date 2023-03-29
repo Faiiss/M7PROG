@@ -1,0 +1,9 @@
+@use 'abstracts/_vars';
+
+body {
+    font-family: vars.$font-family;
+    background: vars.$gradient;
+    min-height: 100vh;
+    padding: map-get(vars.$vhCalculation, "bodyPadding");
+    padding-bottom: 0;
+}

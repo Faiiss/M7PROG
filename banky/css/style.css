@@ -1,0 +1,361 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to bottom right, #83e90d, 30%, #941625);
+  min-height: 100vh;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  background-color: #941625;
+  border-radius: 50%;
+  display: flex-end;
+  position: relative;
+  overflow: hidden;
+  border: 0.6rem #941625;
+  cursor: pointer;
+  top: 10rem;
+  left: 115rem;
+  top: -11rem;
+}
+.avatar__head {
+  background-color: #83e90d;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s all;
+}
+.avatar__body {
+  background-color: #83e90d;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+}
+
+.header {
+  background-color: white;
+  height: 8rem;
+  max-width: 150rem;
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 53rem;
+}
+.header__logo {
+  display: flex;
+  font-size: 250%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.header__avatar {
+  width: 7rem;
+  height: 7rem;
+  background: linear-gradient(to bottom right, #83e90d, 30%, #941625);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 0.4rem solid #000000;
+}
+.header__avatar:hover {
+  cursor: pointer;
+}
+.header__avatar__head {
+  width: 40%;
+  height: 40%;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s all;
+}
+.header__avatar__body {
+  width: 70%;
+  height: 60%;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__avatar:hover .header__avatar__head, .header__avatar__body {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #EEEEEE;
+  border-radius: 2rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+.banky {
+  background-color: white;
+  min-height: calc(100vh - 8rem - 4rem);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 150rem;
+}
+.banky__section {
+  display: flex;
+}
+.banky__section--left {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banky__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.banky__header > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.banky__money {
+  font-weight: 400;
+  font-size: 200%;
+}
+.banky__money--blur {
+  filter: blur(10px);
+}
+.banky__logo {
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(to bottom right, #83e90d, 30%, #941625);
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.banky__eye {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(to bottom right, #83e90d, 30%, #941625);
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.banky__eye:hover {
+  cursor: pointer;
+  background: #941625;
+}
+.banky__eyeButton {
+  background: none;
+  border: none;
+}
+.banky__eyeButton:hover {
+  cursor: pointer;
+}
+.banky__eyeButton:hover .banky__logo {
+  background: #941625;
+}
+.banky__transactions {
+  padding: 2rem;
+  list-style: none;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 40rem;
+  overflow-y: scroll;
+}
+.banky__transactions--blur {
+  filter: blur(10px);
+}
+.banky__transaction {
+  display: flex;
+  font-size: 120%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 0.5rem;
+  animation-name: popup;
+  animation-duration: 0.6s;
+}
+.banky__transaction::after {
+  content: "";
+  width: 100%;
+  height: 3%;
+  background: linear-gradient(to bottom right, #83e90d, 30%, #941625);
+  border: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.banky__name {
+  font-weight: 300;
+  font-size: 120%;
+}
+.banky__amount {
+  font-weight: 300;
+  font-size: 120%;
+}
+.banky__transferButton {
+  background: linear-gradient(to bottom right, #83e90d, 30%, #941625);
+  font-size: 100%;
+  border: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+  margin-left: 2rem;
+}
+.banky__transferButton:hover {
+  cursor: pointer;
+  background: #941625;
+}
+.banky__accounts {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  flex-direction: column;
+}
+.banky__account {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.banky__account:hover {
+  cursor: pointer;
+}
+.banky__accountSwitcher {
+  background: none;
+  border: none;
+}
+.banky__accountSwitcher:hover {
+  cursor: pointer;
+}
+.banky__accountSwitcher:hover .banky__logo {
+  background: #941625;
+}
+.banky__accountName {
+  font-weight: 400;
+  font-size: 120%;
+}
+
+@media screen and (max-width: 62.5rem) {
+  .banky {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .banky__accounts {
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+  .banky__accounts::after {
+    content: "";
+    width: 100%;
+    height: 3%;
+    background: linear-gradient(to bottom right, #83e90d, 30%, #941625);
+    border: 0.2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header__emptyWrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  body {
+    padding: 0;
+  }
+  .header {
+    border-radius: 0;
+    justify-content: center;
+  }
+  .header__emptyWrapper {
+    display: none;
+  }
+  .header__avatar {
+    display: none;
+  }
+  .banky__transactions {
+    height: auto;
+    overflow: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

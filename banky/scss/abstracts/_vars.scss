@@ -1,0 +1,29 @@
+@use "./colors";
+
+$baseColors: (
+    "background": #83e90d,
+    "backgroundDark": #941625,
+    "backgroundScroll": #EEEEEE,
+);
+
+$vhCalculation: (
+    "headerHeight": 8rem,
+    "bodyPadding": 4rem,
+);
+
+$avatarColors: (
+    "colorOne": #46e23a,
+    "colorTwo": #000000,
+);
+$vhCalc: (
+    "heightofheader": 8rem,
+    "paddingofbody": 4rem,
+);
+
+$font-family: "Open Sans", sans-serif;
+
+$gradient: linear-gradient(to bottom right, map-get($baseColors, "background"), 30%, map-get($baseColors, "backgroundDark"));
+
+$sectionWidth: 50% 50%;
+
+$bluramount: 10px;
