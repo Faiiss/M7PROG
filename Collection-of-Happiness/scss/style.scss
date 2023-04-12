@@ -13,6 +13,10 @@
 @import 'abstracts/functions';
 
 // Components
-@import 'components/podcast-card';
+// @import 'components/podcast-card';
+@import 'components/podcast-section';
 @import 'components/header';
 
+body{
+    background: $background-color;
+}

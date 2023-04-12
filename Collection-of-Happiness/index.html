@@ -11,9 +11,8 @@
 
 <body>
     <header class="header">
-        <h1>Podcast Episodes</h1>
         <div class="header__logo">
-            <a href="#"><img src="path/to/logo.png" alt="Logo"></a>
+            <a href="#"><img src="img/logo-coh.png" alt="Logo"></a>
         </div>
         <nav class="header__nav">
             <ul>
@@ -28,9 +27,69 @@
     </header>
     <main>
         <section class="podcasts">
-            <h2>Latest Episodes</h2>
-            <div class="podcast-list"></div>
+            <div class="podcasts__tiles">
+                <!-- Podcast tile 1 -->
+                <div class="podcasts__tile">
+                    <div class="podcasts__tile-left">
+                        <div class="podcasts__tile-date">March 25, 2023</div>
+                        <div class="podcasts__tile-title">Podcast Title 1</div>
+                    </div>
+                    <div class="podcasts__tile-right">
+                        <img src="img/podcast-img-1.webp" alt="Podcast 1">
+                    </div>
+                </div>
+
+                <!-- Podcast tile 2 -->
+                <div class="podcasts__tile">
+                    <div class="podcasts__tile-left">
+                        <div class="podcasts__tile-date">April 1, 2023</div>
+                        <div class="podcasts__tile-title">Podcast Title 2</div>
+                    </div>
+                    <div class="podcasts__tile-right">
+                        <img src="img/podcast-img-1.webp" alt="Podcast 2">
+                    </div>
+                </div>
+
+                <!-- Podcast tile 3 -->
+                <div class="podcasts__tile">
+                    <div class="podcasts__tile-left">
+                        <div class="podcasts__tile-date">April 8, 2023</div>
+                        <div class="podcasts__tile-title">Podcast Title 3</div>
+                    </div>
+                    <div class="podcasts__tile-right">
+                        <img src="img/podcast-img-1.webp" alt="Podcast 3">
+                    </div>
+                </div>
+
+                <!-- Podcast tile 4 -->
+                <div class="podcasts__tile">
+                    <div class="podcasts__tile-left">
+                        <div class="podcasts__tile-date">April 15, 2023</div>
+                        <div class="podcasts__tile-title">Podcast Title 4</div>
+                    </div>
+                    <div class="podcasts__tile-right">
+                        <img src="img/podcast-img-1.webp" alt="Podcast 4">
+                    </div>
+                </div>
+            </div>
+            <!-- Featured podcast -->
+            <div class="podcasts__featured">
+                <div class="podcasts__featured-left">
+                    <div class="podcasts__featured-right">
+                        <img src="img/podcast-img-1.webp" alt="Podcast 5">
+                    </div>
+                    <div class="podcasts__featured-date">April 22, 2023</div>
+                    <div class="podcasts__featured-title">Podcast Title 5</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et augue massa. Aenean euismod
+                        risus elit, at luctus ipsum suscipit in. Nam euismod quam vel aliquet egestas.</p>
+                    <audio controls>
+                        <source src="podcast5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
         </section>
+
     </main>
     <script src="js/script.js"></script>
 </body>

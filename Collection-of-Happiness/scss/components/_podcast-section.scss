@@ -1,0 +1,98 @@
+// Variables
+$podcast-card-height: 350px;
+$podcast-card-background-color: #fff;
+$podcast-card-border: 1px solid #ccc;
+$podcast-card-padding: 20px;
+$podcast-card-title-font-size: 1.2rem;
+$podcast-card-date-font-size: 0.8rem;
+$podcast-card-paragrah-font-size: 0.9rem;
+
+$podcast-large-height: 700px;
+$podcast-large-background-color: #fff;
+$podcast-large-border: 1px solid #ccc;
+$podcast-large-padding: 20px;
+$podcast-large-title-font-size: 1.5rem;
+$podcast-large-date-font-size: 1rem;
+$podcast-large-paragrah-font-size: 1rem;
+
+// Podcast section styles
+.podcasts {
+    margin-top: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.podcasts__featured-left{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+.podcasts__tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    /* adjust height as needed */
+    gap: 20px;
+}
+
+.podcast-card {
+    height: $podcast-card-height;
+    background-color: $podcast-card-background-color;
+    border: $podcast-card-border;
+    padding: $podcast-card-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .podcast-card__img {
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .podcast-card__title {
+        font-size: $podcast-card-title-font-size;
+        margin-top: 10px;
+    }
+
+    .podcast-card__date {
+        font-size: $podcast-card-date-font-size;
+        color: #999;
+    }
+}
+
+.podcast-large {
+    height: $podcast-large-height;
+    background-color: $podcast-large-background-color;
+    border: $podcast-large-border;
+    padding: $podcast-large-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .podcast-large__img {
+        height: 70%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .podcast-large__title {
+        font-size: $podcast-large-title-font-size;
+        margin-top: 10px;
+    }
+
+    .podcast-large__date {
+        font-size: $podcast-large-date-font-size;
+        color: #999;
+    }
+
+    .podcast-large__paragrah {
+        font-size: $podcast-large-paragrah-font-size;
+        margin-bottom: 20px;
+    }
+
+    .podcast-large__audio {
+        margin-top: auto;
+    }
+}
