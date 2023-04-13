@@ -126,6 +126,36 @@ body {
   border-radius: 1rem;
 }
 
+.audio-player {
+  display: flex;
+  align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.audio-player audio {
+  width: 33rem;
+  height: 52px;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #FF7F50;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+.audio-player audio::-webkit-media-controls-panel {
+  background-color: #FF7F50;
+  border-radius: 1rem;
+}
+.audio-player audio::-webkit-media-controls-play-button, .audio-player audio::-webkit-media-controls-pause-button, .audio-player audio::-webkit-media-controls-volume-slider-container, .audio-player audio::-webkit-media-controls-timeline-container {
+  filter: invert(1);
+}
+.audio-player audio::-webkit-media-controls-timeline-progress-bar {
+  background-color: #F0E68C;
+}
+
 @media only screen and (max-width: 375px) {
   .podcasts__featured-left {
     display: flex;
@@ -183,6 +213,19 @@ body {
     gap: 20px;
     list-style: none;
     padding: 2rem;
+  }
+  .audio-player audio {
+    width: 33rem;
+    height: 52px;
+    margin: 0px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 127, 80);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 2rem;
+    outline: none;
   }
 }
 .header {
@@ -362,34 +405,4 @@ body {
 /* Change the color of the scrollbar corners */
 ::-webkit-scrollbar-corner {
   background-color: #ffffff;
-}
-
-.audio-player {
-  display: flex;
-  align-items: center;
-  background-color: #F5F5F5;
-  border-radius: 1rem;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-.audio-player audio {
-  width: 33rem;
-  height: 52px;
-  margin: 0;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  background-color: #FF7F50;
-  color: #ffffff;
-  font-size: 1.2rem;
-  border: none;
-  outline: none;
-}
-.audio-player audio::-webkit-media-controls-panel {
-  background-color: #FF7F50;
-  border-radius: 1rem;
-}
-.audio-player audio::-webkit-media-controls-play-button, .audio-player audio::-webkit-media-controls-pause-button, .audio-player audio::-webkit-media-controls-volume-slider-container, .audio-player audio::-webkit-media-controls-timeline-container {
-  filter: invert(1);
-}
-.audio-player audio::-webkit-media-controls-timeline-progress-bar {
-  background-color: #F0E68C;
 }

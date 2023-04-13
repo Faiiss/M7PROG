@@ -45,39 +45,3 @@ body {
     background-color: $text-color-white;
 }
 
-.audio-player {
-    display: flex;
-    align-items: center;
-    background-color: $background-color;
-    border-radius: $main-border-radius;
-    box-shadow: $main-box-shadow;
-
-    audio {
-        width: 33rem;
-        height: 52px;
-        margin: 0;
-        padding: 0.5rem;
-        border-radius: 1rem;
-        background-color: $primary-color;
-        color: $text-color-white;
-        font-size: 1.2rem;
-        border: none;
-        outline: none;
-
-        &::-webkit-media-controls-panel {
-            background-color: $primary-color;
-            border-radius: $main-border-radius;
-        }
-
-        &::-webkit-media-controls-play-button,
-        &::-webkit-media-controls-pause-button,
-        &::-webkit-media-controls-volume-slider-container,
-        &::-webkit-media-controls-timeline-container {
-            filter: invert(1);
-        }
-
-        &::-webkit-media-controls-timeline-progress-bar {
-            background-color: $accent-color;
-        }
-    }
-}
