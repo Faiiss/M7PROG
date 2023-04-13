@@ -45,10 +45,12 @@ fetch('/data/data.json')
         <div class="podcasts__featured-date">${formatDate(episode["date (dd-mm-yyyy)"])}</div>
         <div class="podcasts__featured-title">${episode.title}</div>
         <p class="podcasts_sum">${episode.summary}</p>
+        <div class="audio-player">
         <audio controls>
           <source src="${episode.audio}" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
+      </div>
       </div>
     `;
                 })
@@ -64,10 +66,12 @@ fetch('/data/data.json')
             <div class="podcasts__featured-date">${formatDate(episode["date (dd-mm-yyyy)"])}</div>
             <div class="podcasts__featured-title">${episode.title}</div>
             <p class="podcasts_sum">${episode.summary}</p>
+            <div class="audio-player">
             <audio controls>
               <source src="${episode.audio}" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
+          </div>
           </div>
         `;
             });
