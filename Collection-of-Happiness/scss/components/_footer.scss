@@ -1,12 +1,12 @@
 @import "../abstracts/variables";
 
 footer {
-  background-color: $primary-color;
-  padding: 2rem;
-  text-align: center;
-  color: $footer-credit-color;
-  min-height: 12vh;
-  margin-top: 10rem;
+    background-color: $primary-color;
+    padding: 2rem;
+    text-align: center;
+    color: $footer-credit-color;
+    min-height: 15vh;
+    margin-top: 4rem;
 
   .container {
     display: flex;
@@ -17,7 +17,7 @@ footer {
 
   .logo {
     img {
-      height: 10rem;
+      height: 8rem;
     }
   }
 

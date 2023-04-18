@@ -61,23 +61,26 @@ body {
   position: absolute;
   top: 544px;
   left: 846px;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #ffffff;
-  width: 30ch;
+  width: 50ch;
+  font-weight: 600;
 }
 
 .podcasts__featured-date {
   position: absolute;
-  top: 290px;
-  right: 134px;
+  top: 229px;
+  right: 119px;
   font-size: 4rem;
+  font-weight: 600;
   color: #ffffff;
 }
 
 .podcasts_sum {
   margin-top: 2rem;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 .podcasts__tiles {
@@ -169,7 +172,7 @@ body {
   }
   .podcasts__featured-right {
     position: relative;
-    width: 29rem;
+    width: 20rem;
     object-fit: cover;
     height: 100%;
     background: #FF7F50;
@@ -193,44 +196,45 @@ body {
   }
   .podcasts__featured-title {
     position: absolute;
-    top: 428px;
-    left: 45px;
-    font-size: 2rem;
+    top: 309px;
+    left: 102px;
+    font-size: 1.4rem;
     color: #ffffff;
     width: 21ch;
+    text-align: center;
   }
   .podcasts__featured-date {
     position: absolute;
-    top: 212px;
-    right: 52px;
+    top: 160px;
+    right: 137px;
     font-size: 2rem;
     color: #ffffff;
   }
   .podcasts__tiles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 300px;
+    grid-auto-rows: 145px;
     gap: 20px;
     list-style: none;
     padding: 2rem;
   }
   .audio-player audio {
-    width: 33rem;
-    height: 52px;
+    width: 36rem;
+    height: 45px;
     margin: 0px;
     padding: 0.5rem;
     border-radius: 1rem;
-    background-color: rgb(255, 127, 80);
-    color: rgb(255, 255, 255);
+    background-color: transparent;
+    /* color: rgb(255, 255, 255); */
     font-size: 1.2rem;
     border: none;
-    margin-top: 2rem;
+    margin-top: 0rem;
     outline: none;
   }
 }
 .header {
   display: flex;
-  height: 15rem;
+  height: 10rem;
   background-color: #fff;
   color: #333;
   font-size: 2rem;
@@ -246,7 +250,7 @@ body {
   /* Extra large devices (large laptops and desktops, 1200px and up) */
 }
 .header .header__logo {
-  height: 9rem;
+  height: 5rem;
 }
 .header .header__logo img {
   height: 100%;
@@ -357,8 +361,8 @@ footer {
   padding: 2rem;
   text-align: center;
   color: #424242;
-  min-height: 12vh;
-  margin-top: 10rem;
+  min-height: 15vh;
+  margin-top: 4rem;
 }
 footer .container {
   display: flex;
@@ -367,7 +371,7 @@ footer .container {
   align-items: center;
 }
 footer .logo img {
-  height: 10rem;
+  height: 8rem;
 }
 footer .credits {
   font-size: 1.5rem;
