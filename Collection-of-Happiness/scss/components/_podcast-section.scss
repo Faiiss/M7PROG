@@ -26,7 +26,13 @@ $podcast-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     gap: 2rem;
     justify-content: space-around;
 }
-
+main{
+    width: 80vw;
+    margin: 0 auto;
+}
+.podcasts__featured{
+    position: relative;
+}
 .podcasts__featured-left {
     display: flex;
     justify-content: center;
@@ -60,8 +66,8 @@ $podcast-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 .podcasts__featured-title {
     position: absolute;
-    top: 469px;
-    left: 1234px;
+    top: 309px;
+    left: 20px;
     font-size: 3rem;
     color: $text-color-white;
     width: 28ch;
@@ -70,8 +76,8 @@ $podcast-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 .podcasts__featured-date {
     position: absolute;
-    top: 174px;
-    right: 208px;
+    top: 24px;
+    right: 21px;
     font-size: 4rem;
     font-weight: 600;
     color: $text-color-white;
@@ -180,7 +186,9 @@ $podcast-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         align-content: center;
         flex-wrap: wrap;
     }
-
+    main{
+        width: 100%;
+    }
     .podcasts__featured-right {
         position: relative;
         width: 20rem;
@@ -209,7 +217,6 @@ $podcast-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
-
     .podcasts__featured-title {
         position: absolute;
         top: 277px;
