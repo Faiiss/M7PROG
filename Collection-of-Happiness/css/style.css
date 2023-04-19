@@ -167,7 +167,7 @@ main {
   background-color: #F0E68C;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
   .podcasts__featured-left {
     display: flex;
     justify-content: center;
@@ -210,8 +210,8 @@ main {
   }
   .podcasts__featured-title {
     position: absolute;
-    top: 277px;
-    left: 102px;
+    top: 144px;
+    left: 94px;
     font-size: 1.4rem;
     color: #ffffff;
     width: 21ch;
@@ -219,8 +219,8 @@ main {
   }
   .podcasts__featured-date {
     position: absolute;
-    top: 160px;
-    right: 137px;
+    top: 16px;
+    right: 130px;
     font-size: 2rem;
     color: #ffffff;
   }
