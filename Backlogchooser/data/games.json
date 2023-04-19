@@ -1,0 +1,44 @@
+{
+    "games": [
+        {
+            "title": "Ufc 4",
+            "platform": "PS4"
+        },
+        {
+            "title": "Mortal Kombat 11",
+            "platform": "PS4"
+        },
+        {
+            "title": "Fifa 23",
+            "platform": "PS4"
+        },
+        {
+            "title": "Rocket League",
+            "platform": "PS4"
+        },
+        {
+            "title": "Gta 5",
+            "platform": "PS3"
+        },
+        {
+            "title": "Cyberpunk 2077",
+            "platform": "PS5"
+        },
+        {
+            "title": "COD MW2",
+            "platform": "PS5"
+        },
+        {
+            "title": "COD Black ops 3",
+            "platform": "PS4"
+        },
+        {
+            "title": "Pokemon Diamond",
+            "platform": "Nintendo%20DS"
+        },
+        {
+            "title": "Super Mario Bros.2",
+            "platform": "Nintendo%203DS"
+        }
+    ]
+}
