@@ -12,5 +12,9 @@ Hier komen alle lessen van PROG
 # Banky
 ![image](https://user-images.githubusercontent.com/90894837/228517165-8e8d5f75-aedc-42af-bb94-c3a9622054f0.png)
 
-#Collection Of Happiness
-![image](https://user-images.githubusercontent.com/90894837/231820030-557c3fdd-a547-4dd6-bde0-f7fa8e515c14.png)
+# Collection Of Happiness
+![image](https://user-images.githubusercontent.com/90894837/233369045-70cfcd15-36d4-4b24-b60b-4b73a3323661.png)
+
+## Mobile 
+![image](https://user-images.githubusercontent.com/90894837/233369135-f95e3c28-6e9a-4335-83bd-096c5d5d1362.png)
+
