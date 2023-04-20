@@ -1,7 +1,7 @@
 # M7PROG 
 Hier komen alle lessen van PROG
 
-[https://faiiss.github.io/M7PROG/cookieclicker/index.html]#CookieClicker
+[https://faiiss.github.io/M7PROG/cookieclicker/index.html]# CookieClicker
 ![image](https://user-images.githubusercontent.com/90894837/228517819-089935ce-29e7-42f2-8001-09a7998b7dc4.png)
 
 
