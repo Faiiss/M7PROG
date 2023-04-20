@@ -1,7 +1,17 @@
 # M7PROG 
 Hier komen alle lessen van PROG
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+## My Section
+
+This is the content of my section.
+
+To link to this section, use the following Markdown code:
+
+[Link to My Section](#my-section)
+
+This will create a clickable link that takes the user to the "My Section" heading within the same document. Note that the ID attribute in the heading tag must match the anchor tag in the link. In this case, the ID is "my-section" and the anchor tag is "#my-section".
+
+
 
 [https://faiiss.github.io/M7PROG/cookieclicker/index.html]# CookieClicker
 ![image](https://user-images.githubusercontent.com/90894837/228517819-089935ce-29e7-42f2-8001-09a7998b7dc4.png)
